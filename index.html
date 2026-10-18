@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reestar - Recipe Website</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Reestar</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <span>|</span>
+            <a href="#recipes">Recipe</a>
+            <span>|</span>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <h2>Welcome to Reestar</h2>
+        <p>Discover delicious recipes for every occasion!</p>
+    </section>
+
+    <!-- Recipe Section -->
+    <section id="recipes" class="recipe-container">
+
+        <!-- Recipe Card 1 -->
+        <div class="recipe-card">
+            <img
+                src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&h=600&fit=crop"
+                alt="Fresh vegetable salad">
+
+            <div class="recipe-info">
+                <h3>Tangy Tamarind Prawn Curry</h3>
+                <p>Something which is very delicious</p>
+                <button type="button"
+                    onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+                    Order Now
+                </button>
+            </div>
+        </div>
+
+        <!-- Recipe Card 2 -->
+        <div class="recipe-card">
+            <img
+                src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=500&h=600&fit=crop"
+                alt="Delicious pasta">
+
+            <div class="recipe-info">
+                <h3>Tangy Tamarind Prawn Curry</h3>
+                <p>Something which is very delicious</p>
+                <button type="button"
+                    onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+                    Order Now
+                </button>
+            </div>
+        </div>
+
+        <!-- Recipe Card 3 -->
+        <div class="recipe-card">
+            <img
+                src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&h=600&fit=crop"
+                alt="Healthy rice and vegetable bowl">
+
+            <div class="recipe-info">
+                <h3>Tangy Tamarind Prawn Curry</h3>
+                <p>Something which is very delicious</p>
+                <button type="button"
+                    onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+                    Order Now
+                </button>
+            </div>
+        </div>
+
+        <!-- Recipe Card 4 -->
+        <div class="recipe-card">
+            <img
+                src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=500&h=600&fit=crop"
+                alt="Pancakes with fruit">
+
+            <div class="recipe-info">
+                <h3>Tangy Tamarind Prawn Curry</h3>
+                <p>Something which is very delicious</p>
+                <button type="button"
+                    onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+                    Order Now
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+
+        <form action="#contact" method="get">
+            <div class="form-row">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"
+                    placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-row">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age"
+                    placeholder="Enter your age" min="1" max="120" required>
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"
+                    placeholder="Enter your email" required>
+            </div>
+
+            <button type="submit" class="send-button">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Reestar | Made with love for food lovers</p>
+    </footer>
+
+</body>
+</html>
